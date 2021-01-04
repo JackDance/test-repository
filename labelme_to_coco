@@ -82,7 +82,12 @@ if __name__ == '__main__':
     obj.save_coco_json(save_path=r'')
 
 
-
+if __name__ == '__main__':
+    # 通常labelme json文件和图片在一个folder目录
+    # obj = Labelme2Coco(img_folder_path='')
+    obj = Labelme2Coco(img_folder_path=r'')
+    # coco json导出路径(注意：保存路径最后要加上文件名，比如data_in_coco.json)
+    obj.save_coco_json(save_path=r'')
 
 
 
